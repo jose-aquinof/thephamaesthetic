@@ -8406,6 +8406,11 @@ h1, h2, h3, h4, h5,
   }
     .hero-wrap.hero-wrap-2 .slider-text {
       height: 620px !important; }
+      @media (max-width: 991.98px) {
+        .hero-wrap.hero-wrap-2 .slider-text {
+          height: 355px !important;
+        }
+      }
   .hero-wrap .slider-text {
     color: rgba(0, 0, 0, 0.4); }
     .hero-wrap .slider-text .icon {
