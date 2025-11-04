@@ -29,9 +29,12 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light ftco-navbar-light-2" id="ftco-navbar">
+  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><span class="flaticon-lotus"></span>Energen</a>
+			<a class="navbar-brand" href="index.html">
+				<img src="images/newlogo3.png" class="img-fluid d-none d-lg-block" style="height: 120px; width: auto;">
+				<img src="images/newlogo3.png" class="img-fluid d-lg-none" style="height: 60px; width: auto;">
+			</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -50,7 +53,7 @@
 	  </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_imagee1.png');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
@@ -65,46 +68,58 @@
 		<section class="ftco-section contact-section">
       <div class="container">
         <div class="row block-9">
-					<div class="col-md-4 contact-info ftco-animate bg-light p-4">
-						<div class="row">
-							<div class="col-md-12 mb-4">
-	              <h2 class="h4">Contact Information</h2>
-	            </div>
-	            <div class="col-md-12 mb-3">
-	              <p><span>Address:</span> 5676 S Redwood Road, Taylorsville, Utah 84119, USA</p>
-	            </div>
-	            <div class="col-md-12 mb-3">
-	              <p><span>Phone:</span> <a href="tel://1234567920">+1 801 631 8074</a></p>
-	            </div>
-	            <div class="col-md-12 mb-3">
-	              <p><span>Email:</span> <a href="mailto:info@yoursite.com">bellalaviet8@gmail.com</a></p>
-	            </div>
-	            <div class="col-md-12 mb-3">
-	              <p><span>Website:</span> <a href="#">yoursite.com</a></p>
-	            </div>
-						</div>
-					</div>
-					<div class="col-md-1"></div>
+          <div class="col-md-4 contact-info ftco-animate bg-light p-4">
+            <div class="row">
+              <div class="col-md-12 mb-4">
+                <h2 class="h4">Contact Information</h2>
+              </div>
+              <div class="col-md-12 mb-3">
+                <p><span>Address:</span> 5676 S Redwood Road, Taylorsville, Utah 84119, USA</p>
+              </div>
+              <div class="col-md-12 mb-3">
+                <p><span>Phone:</span> <a href="tel://1234567920">+1 801 631 8074</a></p>
+              </div>
+              <div class="col-md-12 mb-3">
+                <p><span>Email:</span> <a href="mailto:jose.jared.aquino.fernandez@gmail.com">bellalaviet8@gmail.com</a></p>
+              </div>
+              <div class="col-md-12 mb-3">
+                <p><span>Website:</span> <a href="#">yoursite.com</a></p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-md-1"></div>
+    
           <div class="col-md-6 ftco-animate">
-            <form action="#" class="contact-form">
-            	<div class="row">
-            		<div class="col-md-6">
-	                <div class="form-group">
-	                  <input type="text" class="form-control" placeholder="Your Name">
-	                </div>
+            <!-- ✅ Free working email form -->
+            <form action="https://formsubmit.co/jose.jared.aquino.fernandez@gmail.com" method="POST" class="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                  </div>
                 </div>
                 <div class="col-md-6">
-	                <div class="form-group">
-	                  <input type="text" class="form-control" placeholder="Your Email">
-	                </div>
-	                </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                  </div>
+                </div>
               </div>
+    
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
+                <input type="text" class="form-control" name="subject" placeholder="Subject">
               </div>
+    
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
               </div>
+    
+              <!-- Optional hidden fields -->
+              <input type="hidden" name="_subject" value="New message from The Pham Aesthetic">
+              <input type="hidden" name="_captcha" value="false"> <!-- disables captcha -->
+              <input type="hidden" name="_template" value="table"> <!-- nice email format -->
+              <input type="text" name="_honey" style="display:none"> <!-- simple spam trap -->
+    
               <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
@@ -113,6 +128,8 @@
         </div>
       </div>
     </section>
+    
+    
 
     <div id="map" class="map"></div>
 

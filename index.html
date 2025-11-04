@@ -32,8 +32,8 @@
   	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 			<a class="navbar-brand" href="index.html">
-				<img src="images/logo.png" class="img-fluid d-none d-lg-block" style="height: 60px; width: auto;">
-				<img src="images/logo.png" class="img-fluid d-lg-none" style="height: 40px; width: auto;">
+				<img src="images/newlogo3.png" class="img-fluid d-none d-lg-block" style="height: 120px; width: auto;">
+				<img src="images/newlogo3.png" class="img-fluid d-lg-none" style="height: 60px; width: auto;">
 			</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
@@ -53,7 +53,10 @@
 	  </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap js-fullheight" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap js-fullheight relative" 
+         style="background-image: url('images/bg_image1.png'); position: relative; z-index: 1;">
+  <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.5); z-index: -1;"></div>
+
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
@@ -61,15 +64,15 @@
           	<div class="icon">
 	          	<span class="flaticon-lotus"></span>
           	</div>
-            <h1>Medical &amp; Spa Center</h1>
+            <h1 style="color: white;">Medical &amp; Spa Center</h1>
             <div class="row justify-content-center">
-	            <div class="col-md-7 mb-3">
-	            	<p>Indulge in excellent beauty services provided by our team of experienced experts. Beauty is yours to own!</p>
+	            <div class="col-md-7 mb-3" style="color: white;">
+	            	<p>Elevate your confidence. Enhance your beauty.</p>
 	            </div>
 	          </div>
             <p>
-            	<a href="#" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Get in Touch</a>
-            	<a href="#" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Contact</a>
+            	<a href="contact.html" class="btn btn-primary p-3 px-5 py-4 mr-md-2">Get in Touch</a>
+            	<a href="#prices" class="btn btn-outline-primary p-3 px-5 py-4 ml-md-2">Prices</a>
             </p>
           </div>
         </div>
@@ -102,21 +105,25 @@
 					<div class="col-md-4 d-flex align-items-stretch">
 						<div class="offer-deal text-center px-2 px-lg-5">
 							<div class="text mt-4">
-								<h3 class="mb-4">Open Hours</h3>
-								<p class="mb-5">Welcome to the best medical spa! We are happy to help you!</p>
-								<ul class="list-unstyled">
+								<h3 class="mb-4">Booking Now!</h3>
+								<p class="mb-5">
+									For scheduling, please call or text us at 
+									<a href="tel:8016318074">801-631-8074</a> or message us on 
+									<a href="https://www.instagram.com/thephamaesthetics/?hl=en" target="_blank" rel="noopener noreferrer">Instagram</a>, 
+									and we will gladly help you set up your appointment.
+								  </p>								<!-- <ul class="list-unstyled">
 									<li>Mon-Sat: 9:30 AM – 5:30 PM</li>
 									<li>Sunday: 9:00 AM – 4:00 PM</li>
-								</ul>
+								</ul> -->
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 d-flex align-items-stretch">
 						<div class="offer-deal active text-center px-2 px-lg-5">
 							<div class="text mt-4">
-								<h3 class="mb-4">Booking Now!</h3>
+								<h3 class="mb-4">Contact Us</h3>
 								<p class="mb-5">Let us elevate your beauty to new heights.</p>
-								<p><a href="#" class="btn btn-primary px-4 py-3">Booking Now <span class="ion-ios-arrow-round-forward"></span></a></p>
+								<p><a href="contact.html" class="btn btn-primary px-4 py-3">Message Now <span class="ion-ios-arrow-round-forward"></span></a></p>
 							</div>
 						</div>
 					</div>
@@ -184,7 +191,7 @@
     	</div>
     </section> -->
 
-	<section class="ftco-section bg-light">
+	<section id="prices" class="ftco-section bg-light">
 		<div class="container-fluid px-md-5">
 		  <div class="row justify-content-center mb-5 pb-3">
 			<div class="col-md-12 heading-section ftco-animate text-center">
@@ -198,9 +205,9 @@
 			<div class="col-md-5">
 			  <ul class="list-unstyled">
 				<li class="d-flex justify-content-between align-items-center mb-3">
-				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">IV Therapy</span>
+				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">Botox</span>
 				  <span style="flex:1; border-bottom:1px dotted #d9bf77; margin:0 8px;"></span>
-				  <span style="color:#d9bf77; font-size:1.3rem; font-weight:700;">$170</span>
+				  <span style="color:#d9bf77; font-size:1.7rem; font-weight:700;">$9</span>
 				</li>
 				<li class="d-flex justify-content-between align-items-center mb-3">
 				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">Filler</span>
@@ -208,19 +215,24 @@
 				  <span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$450</span>
 				</li>
 				<li class="d-flex justify-content-between align-items-center mb-3">
-				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">Botox</span>
+				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">IV Therapy</span>
 				  <span style="flex:1; border-bottom:1px dotted #d9bf77; margin:0 8px;"></span>
-				  <span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$7</span>
+				  <span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$170</span>
 				</li>
 				<li class="d-flex justify-content-between align-items-center mb-3">
-				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">Collagen Implantation with Sculptra</span>
+				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">Sculptra</span>
 				  <span style="flex:1; border-bottom:1px dotted #d9bf77; margin:0 8px;"></span>
 				  <span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$590</span>
 				</li>
 				<li class="d-flex justify-content-between align-items-center mb-3">
 				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">Exosome Plus PRP</span>
 				  <span style="flex:1; border-bottom:1px dotted #d9bf77; margin:0 8px;"></span>
-				  <span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$650</span>
+				  <span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$450</span>
+				</li>
+				<li class="d-flex justify-content-between align-items-center mb-3">
+					<span style="font-size:1.5rem; font-weight:500; color:#212529;">Profhlio</span>
+					<span style="flex:1; border-bottom:1px dotted #d9bf77; margin:0 8px;"></span>
+					<span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$380</span>
 				</li>
 			  </ul>
 			</div>
@@ -234,12 +246,12 @@
 				  <span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$400</span>
 				</li>
 				<li class="d-flex justify-content-between align-items-center mb-3">
-				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">Microneedling with Serum</span>
+				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">Microneedling with Exosomes</span>
 				  <span style="flex:1; border-bottom:1px dotted #d9bf77; margin:0 8px;"></span>
-				  <span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$350</span>
+				  <span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$450</span>
 				</li>
 				<li class="d-flex justify-content-between align-items-center mb-3">
-				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">Kybella for Neck Fat Reduction</span>
+				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">Kybella</span>
 				  <span style="flex:1; border-bottom:1px dotted #d9bf77; margin:0 8px;"></span>
 				  <span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$300</span>
 				</li>
@@ -253,6 +265,11 @@
 				  <span style="flex:1; border-bottom:1px dotted #d9bf77; margin:0 8px;"></span>
 				  <span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$450</span>
 				</li>
+				<li class="d-flex justify-content-between align-items-center mb-3">
+				  <span style="font-size:1.5rem; font-weight:500; color:#212529;">Hydro-facial</span>
+				  <span style="flex:1; border-bottom:1px dotted #d9bf77; margin:0 8px;"></span>
+				  <span style="color:#d9bf77; font-size:1.4rem; font-weight:700;">$95</span>
+				</li>
 			  </ul>
 			</div>
 	  
@@ -262,78 +279,39 @@
 	  
 
 
-    <!-- <section class="ftco-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section ftco-animate text-center">
-            <h3 class="subheading">Pricing Tables</h3>
-            <h2 class="mb-1">Pricing Treatments</h2>
-          </div>
-        </div>
-        <div class="row">
-	        <div class="col-md-4 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            <h2 class="heading">Year Card</h2>
-	            <span class="price"><sup>$</sup> <span class="number">449</span></span>
-	            <span class="excerpt d-block">For 1 Year</span>
-	            
-	            <h3 class="heading-2 my-4">Enjoy All The Features</h3>
-	            
-	            <ul class="pricing-text mb-5">
-	              <li>Face Treatments</li>
-	              <li>Nail Treatments</li>
-	              <li>Medical Treatments</li>
-	              <li>Hair Removal</li>
-	            </ul>
-
-	            <a href="#" class="btn btn-primary d-block px-2 py-4">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-4 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            <h2 class="heading">Monthly Card</h2>
-	            <span class="price"><sup>$</sup> <span class="number">200</span></span>
-	            <span class="excerpt d-block">For 1 Month</span>
-	            
-	            <h3 class="heading-2 my-4">Enjoy All The Features</h3>
-	            
-	            <ul class="pricing-text mb-5">
-	              <li>Face Treatments</li>
-	              <li>Nail Treatments</li>
-	              <li>Medical Treatments</li>
-	              <li>Hair Removal</li>
-	            </ul>
-
-	            <a href="#" class="btn btn-primary d-block px-2 py-4">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	        <div class="col-md-4 ftco-animate">
-	          <div class="block-7">
-	            <div class="text-center">
-	            <h2 class="heading">Weekly Card</h2>
-	            <span class="price"><sup>$</sup> <span class="number">85</span></span>
-	            <span class="excerpt d-block">For 1 Week</span>
-	            
-	            <h3 class="heading-2 my-4">Enjoy All The Features</h3>
-	            
-	            <ul class="pricing-text mb-5">
-	              <li>Face Treatments</li>
-	              <li>Nail Treatments</li>
-	              <li>Medical Treatments</li>
-	              <li>Hair Removal</li>
-	            </ul>
-
-	            <a href="#" class="btn btn-primary d-block px-2 py-4">Get Started</a>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-      </div>
-    </section> -->
+	  <section class="ftco-section bg-light">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section ftco-animate text-center">
+			  <h3 class="subheading">Pricing Tables</h3>
+			  <h2 class="mb-1">Membership Benefits</h2>
+			</div>
+		  </div>
+		  <div class="row justify-content-center">
+			<div class="col-md-4 ftco-animate">
+			  <div class="block-7">
+				<div class="text-center">
+				  <h2 class="heading">Yearly Membership</h2>
+				  <span class="price"><sup>$</sup> <span class="number">---</span></span>
+				  <span class="excerpt d-block">For 1 Year</span>
+				  
+				  <h3 class="heading-2 my-4">Enjoy All The Features</h3>
+				  
+				  <ul class="pricing-text mb-5">
+					<li>Botox $7</li>
+					<li>Nail Treatments</li>
+					<li>Medical Treatments</li>
+					<li>Hair Removal</li>
+				  </ul>
+	  
+				  <!-- <a href="#" class="btn btn-primary d-block px-2 py-4">Get Started</a> -->
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
 
 
     <section class="ftco-section testimony-section">
@@ -512,7 +490,7 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/insta.png');">
+              <a class="block-20" style="background-image: url('images/insta.png');">
               </a>
               <div class="text p-4 float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4">
@@ -524,14 +502,14 @@
               			<span class="mos">September</span>
               		</div>
               	</div>
-                <h3 class="heading mt-2"><a href="#">Botox Event</a></h3>
+                <h3 class="heading mt-2"><a>Botox Event</a></h3>
                 <p>Another successful botox event! We did have so much fun. Thanks ladies! </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              <a  class="block-20" style="background-image: url('images/prom1.png');">
               </a>
               <div class="text p-4 float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4">
@@ -539,18 +517,21 @@
               			<span class="day">25</span>
               		</div>
               		<div class="two">
-              			<span class="yr">2019</span>
-              			<span class="mos">September</span>
+              			<span class="yr">2025</span>
+              			<span class="mos">October</span>
               		</div>
               	</div>
-                <h3 class="heading mt-2"><a href="#">Is wellness the new luxury</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                <h3 class="heading mt-2"><a>🎉 Black Friday Flash Sale! 🎉</a></h3>
+                <p>Don’t miss this limited-time offer — valid only until November 3rd!
+
+					💋 Get 1 syringe of filler for just $350!
+					Enhance your natural look and glow this holiday season.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+              <a class="block-20" style="background-image: url('images/image_3.jpg');">
               </a>
               <div class="text p-4 float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4">
@@ -562,7 +543,7 @@
               			<span class="mos">September</span>
               		</div>
               	</div>
-                <h3 class="heading mt-2"><a href="#">Is wellness the new luxury</a></h3>
+                <h3 class="heading mt-2"><a>Is wellness the new luxury</a></h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
             </div>
