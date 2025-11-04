@@ -9083,7 +9083,12 @@ textarea.form-control {
     bottom: 0;
     background: #d9bf77;
     opacity: 0; }
-
+    @media (max-width: 991.98px) {
+      .navbar-brand img.d-lg-none {
+        height: 90px !important; /* override the inline height */
+        width: auto;
+      }
+    }
 .ftco-counter {
   padding: 7em 0; }
   @media (max-width: 1199.98px) {
